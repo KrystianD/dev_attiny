@@ -172,7 +172,6 @@ function(avr_target_link_libraries EXECUTABLE_TARGET)
         endif()
     endforeach(TGT ${ARGN})
 
-    message("A |${NON_TARGET_LIST}|")
     target_link_libraries(${TARGET_LIST} ${NON_TARGET_LIST})
 endfunction(avr_target_link_libraries EXECUTABLE_TARGET)
 
